@@ -23,7 +23,8 @@ Black Market Script For QBCore
 - [qb-menu](https://github.com/qbcore-framework/qb-menu)
 
 # Previews
-![Youtube Video](https://youtu.be/JCQB6jRRUmk)
+Youtube Preview: https://youtu.be/JCQB6jRRUmk
+
 ![Preview Screenshot](https://i.imgur.com/0BJHHMi.jpeg)
 ![Preview Screenshot](https://i.imgur.com/buYQbVM.jpeg)
 ![Preview Screenshot](https://i.imgur.com/kpa0jjG.jpeg)
