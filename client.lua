@@ -36,24 +36,24 @@ CreateThread(function()
         while ( not HasModelLoaded( GetHashKey(PedModel) ) ) do
             Wait(1)
         end
-        TRClassicBlackMarketPed = CreatePed(1, PedHash, Coords, true, true)
-        FreezeEntityPosition(TRClassicBlackMarketPed, true)
-        SetEntityInvincible(TRClassicBlackMarketPed, true)
-        SetBlockingOfNonTemporaryEvents(TRClassicBlackMarketPed, true)
-
-        exports['qb-target']:AddTargetEntity(TRClassicBlackMarketPed, {
-            options = {
-                {
-                    num = 1,
-                    type = "client",
-                    event = "tr-blackmarket:OpenShop",
-                    label = Config.Text["TargetLabel"],
-                    icon = Config.Icons["Eyeicon"],
-                }
-            },
-            distance = 1.5
-        })
     end
+    TRClassicBlackMarketPed = CreatePed(1, PedHash, Coords, true, true)
+    FreezeEntityPosition(TRClassicBlackMarketPed, true)
+    SetEntityInvincible(TRClassicBlackMarketPed, true)
+    SetBlockingOfNonTemporaryEvents(TRClassicBlackMarketPed, true)
+
+    exports['qb-target']:AddTargetEntity(TRClassicBlackMarketPed, {
+        options = {
+            {
+                num = 1,
+                type = "client",
+                event = "tr-blackmarket:OpenShop",
+                label = Config.Text["TargetLabel"],
+                icon = Config.Icons["Eyeicon"],
+            }
+        },
+        distance = 1.5
+    })
 end)
 
 -- qb-menu
