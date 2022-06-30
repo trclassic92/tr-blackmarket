@@ -1,5 +1,19 @@
 local TRClassicBlackMarketPed
 
+-- Remove ped model on resource stop.
+
+function RemoveTRPed()
+    if DoesEntityExist(TRClassicBlackMarketPed) then
+        DeletePed(TRClassicBlackMarketPed)
+    end
+end
+
+AddEventHandler('onResourceStop', function(resourceName) 
+	if GetCurrentResourceName() == resourceName then
+        RemoveTRPed()
+	end 
+end)
+
 -- Target and ped model
 
 CreateThread(function()
