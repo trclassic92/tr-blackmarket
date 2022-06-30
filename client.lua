@@ -8,10 +8,10 @@ local function RemoveTRPed()
     end
 end
 
-AddEventHandler('onResourceStop', function(resourceName) 
+AddEventHandler('onResourceStop', function(resourceName)
 	if GetCurrentResourceName() == resourceName then
         RemoveTRPed()
-	end 
+	end
 end)
 
 -- Target and ped model
