@@ -2,7 +2,7 @@ local TRClassicBlackMarketPed
 
 -- Remove ped model on resource stop.
 
-function RemoveTRPed()
+local function RemoveTRPed()
     if DoesEntityExist(TRClassicBlackMarketPed) then
         DeletePed(TRClassicBlackMarketPed)
     end
