@@ -36,10 +36,10 @@ CreateThread(function()
         while ( not HasModelLoaded( GetHashKey(PedModel) ) ) do
             Wait(1)
         end
-    TRClassicBlackMarketPed = CreatePed(1, PedHash, Coords, true, true)
-    FreezeEntityPosition(TRClassicBlackMarketPed, true)
-    SetEntityInvincible(TRClassicBlackMarketPed, true)
-    SetBlockingOfNonTemporaryEvents(TRClassicBlackMarketPed, true)
+        TRClassicBlackMarketPed = CreatePed(1, PedHash, Coords, true, true)
+        FreezeEntityPosition(TRClassicBlackMarketPed, true)
+        SetEntityInvincible(TRClassicBlackMarketPed, true)
+        SetBlockingOfNonTemporaryEvents(TRClassicBlackMarketPed, true)
     end
     exports['qb-target']:AddTargetEntity(TRClassicBlackMarketPed, {
         options = {
