@@ -36,7 +36,7 @@ CreateThread(function()
         while ( not HasModelLoaded( GetHashKey(PedModel) ) ) do
             Wait(1)
         end
-        TRClassicBlackMarketPed = CreatePed(1, PedHash, Coords, false, false)
+        TRClassicBlackMarketPed = CreatePed(1, PedHash, Coords, false, true)
         FreezeEntityPosition(TRClassicBlackMarketPed, true)
         SetEntityInvincible(TRClassicBlackMarketPed, true)
         SetBlockingOfNonTemporaryEvents(TRClassicBlackMarketPed, true)
