@@ -48,7 +48,7 @@ Youtube Preview: https://youtu.be/JCQB6jRRUmk
 - [Tebex](https://trclassic.tebex.io/)
 
 ## Discord
-- [Join Discord](https://discord.gg/zRCdhENsHG)
+- [Join Discord](https://discord.gg/vTCUWCnQSD)
 
 ## Support
 - [Ko-fi Link](https://ko-fi.com/trclassic)
