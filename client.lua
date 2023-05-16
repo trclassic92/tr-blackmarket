@@ -62,46 +62,12 @@ end)
 -- qb-menu
 RegisterNetEvent('tr-blackmarket:OpenShop', function()
     local BlackMarket = {
-        {
-            header = Config.Text['PedHeader'],
-            isMenuHeader = true,
-            icon = Config.Icons["Header"]
-        },
-        {
-            header = Config.Text['Pistols'],
-            icon = Config.Icons['Pistol'],
-            params = {
-                event = "tr-blackmarket:PistolShop",
-            }
-        },
-        {
-            header = Config.Text['SubMachineGuns'],
-            icon = Config.Icons['SubMachineGuns'],
-            params = {
-                event = "tr-blackmarket:SubMachineGunsShop",
-            }
-        },
-        {
-            header = Config.Text['Shotguns'],
-            icon = Config.Icons['Shotguns'],
-            params = {
-                event = "tr-blackmarket:ShotGunsShop",
-            }
-        },
-        {
-            header = Config.Text['AssaultWeapons'],
-            icon = Config.Icons['AssaultWeapons'],
-            params = {
-                event = "tr-blackmarket:AssaultWeaponsShop",
-            }
-        },
-        {
-            header = Config.Text['Miscellanceous'],
-            icon = Config.Icons['Miscellanceous'],
-            params = {
-                event = "tr-blackmarket:MiscellanceousShop",
-            }
-        },
+        { header = Config.Text['PedHeader'], isMenuHeader = true, icon = Config.Icons["Header"] },
+        { header = Config.Text['Pistols'], icon = Config.Icons['Pistol'], params = { event = "tr-blackmarket:PistolShop" } },
+        { header = Config.Text['SubMachineGuns'], icon = Config.Icons['SubMachineGuns'], params = { event = "tr-blackmarket:SubMachineGunsShop" } },
+        { header = Config.Text['Shotguns'], icon = Config.Icons['Shotguns'], params = { event = "tr-blackmarket:ShotGunsShop" } },
+        { header = Config.Text['AssaultWeapons'], icon = Config.Icons['AssaultWeapons'], params = { event = "tr-blackmarket:AssaultWeaponsShop" } },
+        { header = Config.Text['Miscellanceous'], icon = Config.Icons['Miscellanceous'], params = { event = "tr-blackmarket:MiscellanceousShop" } }
     }
     exports['qb-menu']:openMenu(BlackMarket)
 end)
