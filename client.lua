@@ -74,21 +74,22 @@ end)
 
 -- BlackMarket Shop Event
 RegisterNetEvent("tr-blackmarket:PistolShop", function()
-	TriggerServerEvent("inventory:server:OpenInventory", "shop", "market", Config.PistolShop)
+    TriggerServerEvent("inventory:server:OpenInventory", "shop", "market", Config.PistolShop)
 end)
 
 RegisterNetEvent("tr-blackmarket:SubMachineGunsShop", function()
-	TriggerServerEvent("inventory:server:OpenInventory", "shop", "market", Config.SubMachineGunShop)
+    TriggerServerEvent("inventory:server:OpenInventory", "shop", "market", Config.SubMachineGunShop)
 end)
 
 RegisterNetEvent("tr-blackmarket:ShotGunsShop", function()
-	TriggerServerEvent("inventory:server:OpenInventory", "shop", "market", Config.ShotGunShop)
+    TriggerServerEvent("inventory:server:OpenInventory", "shop", "market", Config.ShotGunShop)
 end)
 
 RegisterNetEvent("tr-blackmarket:AssaultWeaponsShop", function()
-	TriggerServerEvent("inventory:server:OpenInventory", "shop", "market", Config.AssaultWeaponsShop)
+    TriggerServerEvent("inventory:server:OpenInventory", "shop", "market", Config.AssaultWeaponsShop)
 end)
 
 RegisterNetEvent("tr-blackmarket:MiscellanceousShop", function()
-	TriggerServerEvent("inventory:server:OpenInventory", "shop", "market", Config.MiscellanceousShop)
+    TriggerServerEvent("inventory:server:OpenInventory", "shop", "market", Config.MiscellanceousShop)
 end)
+
