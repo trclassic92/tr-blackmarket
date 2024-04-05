@@ -1,6 +1,8 @@
 Config = {}
 
 Config.UseBlip = true                      -- [true to enable the blip | false disables the blip]
+Config.ItemCheck = false                    -- true for item check / false for no item
+Config.Item = 'itemhere'
 
 Config.Location = {
     Coords = vector4(-279.14, 2206.02, 129.85 - 1.00, 67.35),
@@ -356,5 +358,3 @@ Config.MiscellanceousShop = {
         },
     }
 }
-
-
