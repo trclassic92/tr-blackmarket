@@ -1,4 +1,5 @@
 local TRClassicBlackMarketPed
+local itemCheck = Config.ItemCheck
 
 -- Remove ped model on resource stop.
 
@@ -45,6 +46,27 @@ CreateThread(function()
         SetBlockingOfNonTemporaryEvents(TRClassicBlackMarketPed, true)
     end
 
+    if itemCheck then
+        exports['qb-target']:AddEntityZone('TRPed'..TRClassicBlackMarketPed, TRClassicBlackMarketPed, {
+            name = 'TRPed'..TRClassicBlackMarketPed,
+            heading = GetEntityHeading(TRClassicBlackMarketPed),
+            debugPoly = false,
+            item = Config.Item,
+        }, {
+            options = {
+                {   
+                    icon = Config.Icons["Eyeicon"],
+                    label = Config.Text["TargetLabel"],
+                    event = "tr-blackmarket:OpenShop",
+                    canInteract = function(entity)
+                        if IsPedDeadOrDying(entity, true) or IsPedAPlayer(entity) or IsPedInAnyVehicle(PlayerPedId(), false) then return false end
+                        return true
+                    end,    
+                },
+            },
+            distance = 1.5
+        })
+    else
     exports['qb-target']:AddTargetEntity(TRClassicBlackMarketPed, {
         options = {
             {
@@ -57,6 +79,7 @@ CreateThread(function()
         },
         distance = 1.5
     })
+    end
 end)
 
 -- qb-menu
@@ -92,4 +115,3 @@ end)
 RegisterNetEvent("tr-blackmarket:MiscellanceousShop", function()
     TriggerServerEvent("inventory:server:OpenInventory", "shop", "market", Config.MiscellanceousShop)
 end)
-
